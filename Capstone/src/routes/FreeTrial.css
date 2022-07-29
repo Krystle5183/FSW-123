@@ -1,0 +1,41 @@
+.paragraph1 {
+    margin: 2.5em 15px 2.5em 25px;
+    font-size: 1.5em;
+}
+
+.signup-button {
+    margin-left: 8em;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f4511e;
+    transition: all 0.5s;
+    border: none;
+    color: #FFFFFF;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.signup-button:hover {
+    padding-right: 30px;
+}
+
+.signup-text {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.signup-text:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.signup-button:hover .signup-text:after {
+    opacity: 1;
+    right: 1;
+}
